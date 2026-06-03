@@ -1,11 +1,40 @@
-/* 
+body{
+    background-color: #636363;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.traffic-light-container {
+    background-color: #222;
+    width: fit-content;
+    border: 4px solid #111;
+    margin: 20px auto;
+}
 
-*/
+.traffic-light-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #444; 
+}
+
+.traffic-light-button.red.active {
+    background-color: #ff0000;
+    box-shadow: 0 0 25px #ff0000;
+}
+
+.traffic-light-button.amber.active {
+    background-color: #ffaa00;
+    box-shadow: 0 0 25px #ffaa00;
+}
+
+.traffic-light-button.green.active {
+    background-color: #00cc00;
+    box-shadow: 0 0 25px #00cc00;
+}
+
+.traffic-light-button.purple.active {
+    background-color: #cc00b1;
+    box-shadow: 0 0 25px #cc00b1;
+}
